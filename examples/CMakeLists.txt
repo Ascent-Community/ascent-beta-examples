@@ -1,0 +1,7 @@
+add_subdirectory(airy)
+add_subdirectory(control)
+add_subdirectory(lorenz)
+add_subdirectory(multithread)
+add_subdirectory(sampling)
+add_subdirectory(script)
+add_subdirectory(spring-damper)
