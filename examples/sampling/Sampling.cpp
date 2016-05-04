@@ -23,15 +23,15 @@ Sampling::Sampling(size_t sim) : asc::Module(sim)
 
 void Sampling::update()
 {
-   cout << "update()-----" << '\n';
-   cout << "time: " << t << '\n';
+   cout << "update" << '\n';
+   cout << "t " << t << '\n';
 
    xd = cos(t); // integrated xd will be sin(t)
 
    if (sample())
-      cout << "x at first pass of integration step: " << x << '\n';
+      cout << "x at first pass " << x << '\n';
    else
-      cout << "x: " << x << '\n';
+      cout << "x " << x << '\n';
 
    if (sample(0.13) && !first_update) // sample() will always return true when t == 0.0, we use !first_update here to exclude printing the initial condition
       cout << "x every 0.13: " << x << '\n';
@@ -41,8 +41,8 @@ void Sampling::update()
 
 void Sampling::report()
 {
-   cout << "report()*****" << '\n';
-   cout << "time: " << t << '\n';
-   cout << "analytical sin(t): " << sin(t) << '\n';
-   cout << "computed x: " << x << '\n' << '\n';
+   cout << "report" << '\n';
+   cout << "t " << t << '\n';
+   cout << "sin(t) " << sin(t) << '\n';
+   cout << "x " << x << '\n' << '\n';
 }
