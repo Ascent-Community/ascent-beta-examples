@@ -14,8 +14,12 @@
 
 #include "Airy.h"
 
+#include "ascent/integrators/Euler.h"
+
 int main()
 {
+   //asc::integrator<asc::Euler>(0);
+
    Airy system(0);
    system.name<Airy>("airy");
    system.x = 1.0;
@@ -23,7 +27,7 @@ int main()
    system.track("t");
    system.track("x");
 
-   system.run(0.01, 20.0);
+   system.run(0.1, 10.0);
 
    system.outputTrack();
 
