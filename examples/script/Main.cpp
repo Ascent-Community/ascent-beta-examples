@@ -22,12 +22,12 @@ int main()
 
    asc::Link<Body> body0(sim);
    asc::Link<Body> body1(sim);
-   body0->name<Body>("body0");
-   body1->name<Body>("body1");
+   body0.name("body0");
+   body1.name("body1");
    asc::Link<Spring> spring(sim);
-   spring->name<Spring>("spring");
+   spring.name("spring");
    asc::Link<Damper> damper(sim);
-   damper->name<Damper>("damper");
+   damper.name("damper");
 
    body1->s = 1.0; // initial position
    body1->v = 40.0; // initial velocity
