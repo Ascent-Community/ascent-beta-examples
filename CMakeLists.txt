@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.0)
 project(examples)
 
+set(AscentPath "../../ascent")
+
 if(MSVC)
 	# for ChaiScript
 	add_definitions(/bigobj)
@@ -11,10 +13,10 @@ mark_as_advanced (CMAKE_INSTALL_PREFIX)
 
 file(GLOB_RECURSE srcs examples/*.cpp examples/*.h)
 
-include_directories(../ascent)
-include_directories(../ascent/eigen)
-include_directories(../ascent/ChaiScript/include)
+include_directories(${AscentPath})
+include_directories(${AscentPath}/eigen)
+include_directories(${AscentPath}/ChaiScript/include)
 
-link_directories(../ascent/build)
+link_directories(${AscentPath}/build)
 
 add_subdirectory(examples)
