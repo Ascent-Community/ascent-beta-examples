@@ -14,7 +14,7 @@
 
 #include "Object.h"
 
-#include "ascent\integrators\Euler.h"
+#include "ascent/integrators/Euler.h"
 
 int main()
 {
