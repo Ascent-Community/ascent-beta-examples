@@ -1,4 +1,4 @@
-project(multithread)
+project(multithreaded-control)
 
 link_libraries(ascent)
 

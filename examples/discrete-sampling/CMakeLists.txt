@@ -1,4 +1,4 @@
-project(sampling)
+project(discrete-sampling)
 
 link_libraries(ascent)
 

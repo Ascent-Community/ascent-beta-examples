@@ -1,4 +1,4 @@
-project(system)
+project(complex-system)
 
 link_libraries(ascent)
 
