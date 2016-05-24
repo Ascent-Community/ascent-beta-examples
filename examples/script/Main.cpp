@@ -53,9 +53,9 @@ int main()
       chai("body1.s = 2.0;");
       chai("spring.run(0.01, 1.5);");
    }
-   catch (std::exception& e)
+   catch (const chaiscript::exception::eval_error& ee)
    {
-      std::cout << e.what();
+      std::cout << ee.pretty_print() << '\n';
    }
 
    tracker.outputTrack();
