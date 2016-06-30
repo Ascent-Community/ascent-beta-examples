@@ -1,0 +1,41 @@
+[
+   {
+      "module": "body0",
+      "vars": [
+         {
+            "type": "double",
+            "var": "s",
+            "value": 1.0
+         },
+         {
+            "type": "double",
+            "var": "v",
+            "value": 40.0
+         },
+         {
+            "type": "double",
+            "var": "m",
+            "value": 1.0
+         }
+      ]
+   },
+   {
+      "module": "spring",
+      "vars": [
+         {
+            "type": "double",
+            "var": "k",
+            "value": 2000.0
+         }
+      ]
+   },
+   {
+      "module": "damper",
+      "vars": [
+         {
+            "type": "double",
+            "var": "c"
+         }
+      ]
+   }
+]

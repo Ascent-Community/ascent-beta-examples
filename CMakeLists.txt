@@ -16,6 +16,7 @@ file(GLOB_RECURSE srcs examples/*.cpp examples/*.h)
 include_directories(${AscentPath})
 include_directories(${AscentPath}/eigen)
 include_directories(${AscentPath}/ChaiScript/include)
+include_directories(${AscentPath}/jsoncons/src)
 
 link_directories(${AscentPath}/build)
 
