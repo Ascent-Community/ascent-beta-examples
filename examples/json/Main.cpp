@@ -49,5 +49,13 @@ int main()
 
    tracker.outputTrack();
 
+   std::ofstream file;
+   file.open("json_data.txt");
+
+   if (file)
+   {
+      file << tracker.jsonTrack();
+   }
+
    return 0;
 }
