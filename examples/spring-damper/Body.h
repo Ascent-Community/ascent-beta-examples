@@ -14,7 +14,7 @@
 
 #pragma once
 
-#include "ascent/Module.h"
+#include "ascent/Link.h"
 
 class Body : public asc::Module
 {
